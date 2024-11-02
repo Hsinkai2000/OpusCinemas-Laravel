@@ -21,7 +21,7 @@
 
     <div class="">
         <a href="{{ Auth::user() ? route('logout') : route('login-page') }}"
-            class="text-white
+            class="text-white hover:text-primary
             text-xl">{{ Auth::user() ? Auth::user()->email : 'Login' }}</a>
     </div>
 </nav>

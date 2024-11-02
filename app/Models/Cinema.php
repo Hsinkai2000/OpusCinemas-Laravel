@@ -11,4 +11,9 @@ class Cinema extends Model
         'description',
         'picture',
     ];
+
+    public function movieTiming()
+    {
+        return $this->hasMany(MovieTiming::class);
+    }
 }

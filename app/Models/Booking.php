@@ -24,4 +24,9 @@ class Booking extends Model
     {
         return $this->belongsTo(MovieTiming::class);
     }
+
+    public function seat()
+    {
+        return $this->hasMany(Seat::class);
+    }
 }

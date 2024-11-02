@@ -14,10 +14,10 @@
         <span class="text-l">{{ $movie->description }}</span>
 
         <div class="flex space-x-10">
-            <button type="submit" onclick="submitForm('{{ route('register.post') }}')"
+            <button type="submit"
                 class="bg-secondary border border-primary text-primary h-16 w-52 rounded-xl md:mt-10 hover:bg-dark">Watch
                 Trailer</button>
-            <button type="submit" onclick="submitForm('{{ route('login.post') }}')"
+            <button type="button" onclick="window.location.href='{{ route('booking', ['id' => $movie->id]) }}'"
                 class="bg-primary text-secondary h-14 w-52 rounded-xl md:mt-10 hover:bg-dark">Book Now</button>
         </div>
     </div>
@@ -35,6 +35,7 @@
             <span class="text-primary text-xl font-bold">Writers</span>
             <span class="text-white text-opacity-60 text-xl">{{ $movie->writers }}</span>
         </section>
+
         <hr>
 
         <section class="flex flex-col space-y-5 p-8">

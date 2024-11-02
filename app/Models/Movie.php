@@ -19,9 +19,15 @@ class Movie extends Model
     ];
 
 
+
     // Relationship with Movie model
-    public function Genre()
+    public function genre()
     {
         return $this->hasMany(Genre::class);
+    }
+
+    public function movieTiming()
+    {
+        return $this->hasMany(MovieTiming::class);
     }
 }
