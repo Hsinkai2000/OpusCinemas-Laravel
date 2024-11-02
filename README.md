@@ -7,60 +7,64 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Opus Cinemas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Summary of Project
+Opus Cinemas redefines the movie experience with cutting-edge technology and a commitment to luxury. Designed for discerning customers, the platform allows users to effortlessly browse ongoing and upcoming films, ensuring they never miss the latest releases. Each movie page features carefully curated details, including exclusive trailers and recommendations, enhancing the booking process.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+With seamless seat selection and multiple payment options, booking is quick and convenient. Customers receive detailed email invoices confirming their reservations. The platform also offers a personalized dashboard where users can manage their booking history with ease.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Opus Cinemas goes beyond just watching a movie—it delivers a luxurious, stress-free experience from browsing films to the moment the credits roll.
 
-## Learning Laravel
+## Application Requirements and Specifications
+Opus Cinemas is a premium movie booking platform designed to offer a seamless booking user experience. It allows users to browse detailed listings of current and upcoming films, watch trailers, and receive personalized movie recommendations. The platform features real-time seat selection and secure booking with multiple payment options. Users can manage their reservations, track booking history, and receive automated email invoices. A search function enables quick access to specific films, while integrated customer support offers assistance with any inquiries. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- User Registration and Authentication
+- Movie Listings
+- Movie Recommendations
+- Movie Details
+- Cinema Viewing
+- Seat Selection
+- Booking System
+- Booking Management
+- Email Invoice
+- Search Functionality
+- Customer Support
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Functional Requirements and Specifications
+1. Customers must be able to create an account and log in using email or social media
+2. Customers must be able to view current and upcoming movies, including details like titles, genres, showtimes, descriptions, trailers, and poster images
+3. Customers must be able to view what kind of cinema they can potentially be watching the movie in
+4. Customers can access an interactive seating chart for each showtime, allowing them to select and reserve seats
+5. Customers must be able to indicate seat availability 
+6. Customers must be able to book tickets for selected movies and times
+7. Customers must be able to make payments with multiple methods (credit card, PayPal, etc.)
+8. Customers must be able to receive booking confirmation with an email invoice containing booking details
+9. Customers must be able to view current and past bookings in their account dashboard 
+10. Customers must be able to view details such as movie, date, time, seat, and booking reference from the invoice 
+11. Customers must be able to search for movies by title, genre, or date
+12. Customers must be able to search with auto-suggestions for quick navigation
+13. Customers must be able to contact or email for any customer inquiries.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Technical Design
 
-## Laravel Sponsors
+## Site Map
+- Home: This is the main page where users can browse through available and upcoming movies
+- Login/Register: Users can create an account or log in to their existing account
+- Booking Management: This page provides users with their upcoming and historical movies with Opus Cinema
+- Now Showing: This page lists movies that are currently playing in cinema
+- Movie Details: Users can find detailed information about a specific movie, such as its summary, cast, and watch the trailer
+- Cinemas: This page lists available cinemas and their locations.
+- Ticket Booking: Users can select their desired showtime and seats to book tickets
+- Payment: Users can complete their ticket purchase by selecting a payment method
+- Customer Support: This page provides a contact platform for users to make suggestions/complains
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Testing Plan
+1. Functionality Testing: This entails verifying the functionality of all aspects of the website, such as forms, databases, links, and scripts, to confirm they operate as expected.
+2. Usability Testing: Centered on the user experience, this type of testing evaluates the website’s simplicity, navigation flow, and overall interface design.
+3. Web UI Testing: This verifies that all interactions between the website’s components, such as web servers and databases, operate properly.
+4. Compatibility Testing: Conduct cross-browser testing to evaluate the website’s performance on different browsers, ensuring a consistent user experience.
+5. Performance Testing: Assesses the website’s speed, scalability, and reliability under different scenarios, such as high traffic and limited network conditions.
+6. Security Testing: Essential for safeguarding user data and the website, this testing detects vulnerabilities to prevent attacks such as SQL injection, cross-site scripting, and other security threats..
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+We will also be using tools for debugging purposes such as VSCode, Chrome DevTools, Firefox DevTools and Postman. 
