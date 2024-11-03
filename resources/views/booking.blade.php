@@ -560,13 +560,9 @@
             }
         }
 
-        const selectedSeats = Array.from(
-            document.querySelectorAll(".selected-seat")
-        ).map((seat) => seat.dataset.value);
-
         // Construct query parameters
         const params = new URLSearchParams({
-            seats: selectedSeats.join(','), // Convert array to comma-separated string
+            seats: Array.from(selectedSeats), // Convert array to comma-separated string
             cinema_id: selectedCinema,
             movie_id: {{ $movie->id }},
             timing: selectedTiming,

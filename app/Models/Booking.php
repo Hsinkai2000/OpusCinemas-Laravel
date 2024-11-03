@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
+    public $timestamps = false;
     protected $fillable = [
         'email',
         'movie_timing_id',

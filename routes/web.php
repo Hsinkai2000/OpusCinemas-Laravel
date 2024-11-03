@@ -17,6 +17,7 @@ Route::get('/getTakenSeats/{movie}/{cinemaId}/{timing}', [MovieController::class
 
 Route::get('/booking/{id}', [BookingController::class, 'show_booking_page'])->name('booking');
 Route::get('/payment/view', [BookingController::class, 'showPaymentView'])->name('payment.view');
+Route::post('/makebooking', [BookingController::class, 'makeBooking'])->name('make.booking');
 
 Route::get('/cinema', [CinemaController::class, 'show_cinemas'])->name('cinema');
 
